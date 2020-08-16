@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="2.js"></script>
+    <title>Validation form</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-content-center " style="background:linear-gradient(red,yellow)">
+            <div class="col-sm-8   mt-5 rounded border mb-5" style="background:linear-gradient(pink,green);">
+                <form action="#" method="POST">
+                    <div class="row justify-content-center align-items-center mt-5">
+                        <div class="col-sm-8 form-group mb-3">
+                            <label style="font-weight: bolder;">Username</label>
+                            <input type="text" class="form-control" id="user" placeholder="Enter Username" required
+                                pattern="[A-Za-z@]{5,15}">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-sm-8 form-group mb-3">
+                            <label style="font-weight: bolder;">Password</label>
+                            <input type="password" class="form-control" id="pass" placeholder="Enter Password" required
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z].{8,}">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-sm-8 form-group mb-5">
+                            <label style="font-weight: bolder;">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="xyz@gmail.com" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9._]+\.[a-z]{3}$">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-8 form-group mb-5">
+
+                            <button class="btn btn-outline-danger  form-control" onclick="reset()"
+                                onclick="validate()">Submit</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
